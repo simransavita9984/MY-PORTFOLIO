@@ -75,7 +75,7 @@ const Projects = () => {
       ],
       image:
         "https://plus.unsplash.com/premium_photo-1720287601300-cf423c3d6760?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dnMlMjBjb2RlfGVufDB8fDB8fHww",
-      demoUrl: "#",
+      demoUrl: "https://vs-code-clone-six-bay.vercel.app/",
       githubUrl: "https://github.com/simransavita9984/VS-code-clone",
     },
   ];
