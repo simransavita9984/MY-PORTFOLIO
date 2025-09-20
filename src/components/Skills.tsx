@@ -17,10 +17,10 @@ const Skills = () => {
     {
       title: "Backend Development", 
       skills: [
-        { name: "Node.js", level: 50 },
+        { name: "Node.js", level: 90 },
         { name: "Python", level: 85 },
         { name: "DJango", level: 70 },
-        { name: "MongoDB", level: 82 }
+        { name: "MongoDB", level: 85 }
       ]
     },
     {
@@ -34,14 +34,14 @@ const Skills = () => {
         { name: "Data Analysis", level: 85 }
       ]
     },
-    {
-     title: "IoT & Hardware",
-      skills: [
-        { name: "Arduino/ESP32", level: 85 },
-        { name: "Raspberry Pi", level: 80 },
-        { name: "Sensor Integration", level: 88 }
-      ]
-    }
+    // {
+    //  title: "IoT & Hardware",
+    //   skills: [
+    //     { name: "Arduino/ESP32", level: 85 },
+    //     { name: "Raspberry Pi", level: 80 },
+    //     { name: "Sensor Integration", level: 88 }
+    //   ]
+    // }
   ];
 
   useEffect(() => {
@@ -65,7 +65,6 @@ const Skills = () => {
     <section ref={sectionRef} id="skills" className="py-20 relative">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               My <span className="text-gradient">Skills</span>
@@ -75,7 +74,6 @@ const Skills = () => {
             </p>
           </div>
 
-          {/* Skills Grid */}
           <div className="grid md:grid-cols-2 gap-8">
             {skillCategories.map((category, categoryIndex) => (
               <div key={categoryIndex} className="card-glass p-8">
@@ -107,7 +105,6 @@ const Skills = () => {
             ))}
           </div>
 
-          {/* Additional Skills Tags */}
           <div className="mt-16 text-center">
             <h4 className="text-xl font-semibold mb-6">Additional Technologies</h4>
             <div className="flex flex-wrap justify-center gap-3">

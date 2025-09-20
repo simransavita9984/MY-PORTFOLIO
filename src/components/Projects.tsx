@@ -84,7 +84,7 @@ const Projects = () => {
     <section id="projects" className="py-20 relative">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          {/* Section Header */}
+        
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Featured <span className="text-gradient">Projects</span>
@@ -95,7 +95,6 @@ const Projects = () => {
             </p>
           </div>
 
-          {/* Projects Grid */}
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <div
@@ -104,7 +103,6 @@ const Projects = () => {
                 onClick={() => setSelectedProject(project.id)}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                {/* Project Image */}
                 <div className="relative overflow-hidden">
                   <img
                     src={project.image}
@@ -119,7 +117,6 @@ const Projects = () => {
                   </div>
                 </div>
 
-                {/* Project Content */}
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
                     {project.title}
@@ -129,7 +126,6 @@ const Projects = () => {
                     {project.description}
                   </p>
 
-                  {/* Technologies */}
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.slice(0, 3).map((tech) => (
                       <span
@@ -146,7 +142,6 @@ const Projects = () => {
                     )}
                   </div>
 
-                  {/* Action Buttons */}
                   <div className="flex gap-3">
                     <button
                       className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-lg hover:bg-primary hover:text-primary-foreground transition-all duration-300"
@@ -189,7 +184,6 @@ const Projects = () => {
         </div>
       </div>
 
-      {/* Project Modal */}
       {selectedProject && (
         <div className="fixed inset-0 bg-background/80 backdrop-blur-md z-50 flex items-center justify-center p-4">
           <div className="bg-card border border-border rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
@@ -199,7 +193,7 @@ const Projects = () => {
 
               return (
                 <div className="relative">
-                  {/* Close Button */}
+              
                   <button
                     onClick={() => setSelectedProject(null)}
                     className="absolute top-4 right-4 z-10 w-10 h-10 bg-background/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
@@ -207,14 +201,13 @@ const Projects = () => {
                     <X className="w-5 h-5" />
                   </button>
 
-                  {/* Project Image */}
+             
                   <img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-64 object-cover rounded-t-2xl"
                   />
 
-                  {/* Project Details */}
                   <div className="p-8">
                     <div className="mb-4">
                       <span className="px-3 py-1 bg-primary/20 rounded-full text-sm font-medium text-primary">
@@ -230,7 +223,6 @@ const Projects = () => {
                       {project.description}
                     </p>
 
-                    {/* Features */}
                     <div className="mb-6">
                       <h4 className="text-xl font-semibold mb-3">
                         Key Features
@@ -245,7 +237,6 @@ const Projects = () => {
                       </ul>
                     </div>
 
-                    {/* Technologies */}
                     <div className="mb-8">
                       <h4 className="text-xl font-semibold mb-3">
                         Technologies Used
@@ -262,7 +253,7 @@ const Projects = () => {
                       </div>
                     </div>
 
-                    {/* Action Buttons */}
+          
                     <div className="flex gap-4">
                       <a
                         href={

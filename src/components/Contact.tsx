@@ -12,7 +12,6 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
     toast.success("Message sent successfully! I'll get back to you soon.");
     setFormData({ name: "", email: "", subject: "", message: "" });
   };
@@ -40,7 +39,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: "Location",
-      value: "Kanpur Nagar, India",
+      value: "Kanpur Nagar, Uttar Pradesh, India",
       href: "#"
     }
   ];
@@ -48,14 +47,13 @@ const Contact = () => {
   const socialLinks = [
     { icon: Github, href: "https://github.com/simransavita9984", label: "GitHub" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/simran-savita/", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" }
+    { icon: Twitter, href: "https://x.com/sim72344", label: "Twitter" }
   ];
 
   return (
     <section id="contact" className="py-20 relative">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Get In <span className="text-gradient">Touch</span>
@@ -66,7 +64,6 @@ const Contact = () => {
           </div>
 
           <div className="grid lg:grid-cols-5 gap-12">
-            {/* Contact Form */}
             <div className="lg:col-span-3">
               <div className="card-glass p-8">
                 <h3 className="text-2xl font-semibold mb-6 text-glow">
@@ -150,11 +147,8 @@ const Contact = () => {
                 </form>
               </div>
             </div>
-
-            {/* Contact Info */}
             <div className="lg:col-span-2">
               <div className="space-y-8">
-                {/* Contact Details */}
                 <div className="card-glass p-6">
                   <h4 className="text-xl font-semibold mb-6">Contact Information</h4>
                   <div className="space-y-4">
@@ -176,7 +170,6 @@ const Contact = () => {
                   </div>
                 </div>
 
-                {/* Social Links */}
                 <div className="card-glass p-6">
                   <h4 className="text-xl font-semibold mb-6">Follow Me</h4>
                   <div className="flex gap-4">
@@ -192,9 +185,7 @@ const Contact = () => {
                     ))}
                   </div>
                 </div>
-
-                {/* Call to Action */}
-                <div className="card-glass p-6 text-center">
+                {/* <div className="card-glass p-6 text-center">
                   <h4 className="text-xl font-semibold mb-3">Ready to start?</h4>
                   <p className="text-muted-foreground mb-4">
                     Let's discuss how we can bring your vision to life
@@ -202,7 +193,7 @@ const Contact = () => {
                   <button className="btn-hero-outline w-full">
                     Schedule a Call
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

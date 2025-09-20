@@ -37,7 +37,7 @@ const Navigation = () => {
     }`}>
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
+
           <a 
             href="#" 
             className="text-2xl font-bold text-gradient hover:scale-105 transition-transform cursor-pointer"
@@ -46,7 +46,6 @@ const Navigation = () => {
            MY Portfolio
           </a>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <button
@@ -59,15 +58,14 @@ const Navigation = () => {
               </button>
             ))}
             
-            <button 
+            {/* <button 
               onClick={() => scrollToSection("#contact")}
               className="btn-hero-outline ml-4"
             >
               Hire Me
-            </button>
+            </button> */}
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden p-2 text-foreground hover:text-primary transition-colors"
@@ -75,8 +73,7 @@ const Navigation = () => {
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
-
-        {/* Mobile Navigation */}
+        
         {isMenuOpen && (
           <div className="md:hidden bg-card/95 backdrop-blur-md border border-border/50 rounded-lg mt-2 p-4">
             <div className="space-y-4">
@@ -90,12 +87,12 @@ const Navigation = () => {
                 </button>
               ))}
               
-              <button 
+              {/* <button 
                 onClick={() => scrollToSection("#contact")}
                 className="btn-hero w-full mt-4"
               >
                 Hire Me
-              </button>
+              </button> */}
             </div>
           </div>
         )}
