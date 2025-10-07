@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { ChevronDown } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
-import profileImage from "@/assets/profile.png"; // Your profile image
+import profileImage from "@/assets/profile.png"; 
 
 const Hero = () => {
   const [text, setText] = useState("");
