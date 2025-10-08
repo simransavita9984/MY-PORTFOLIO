@@ -57,13 +57,6 @@ const Navigation = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
               </button>
             ))}
-            
-            {/* <button 
-              onClick={() => scrollToSection("#contact")}
-              className="btn-hero-outline ml-4"
-            >
-              Hire Me
-            </button> */}
           </div>
 
           <button
@@ -86,13 +79,6 @@ const Navigation = () => {
                   {item.label}
                 </button>
               ))}
-              
-              {/* <button 
-                onClick={() => scrollToSection("#contact")}
-                className="btn-hero w-full mt-4"
-              >
-                Hire Me
-              </button> */}
             </div>
           </div>
         )}
