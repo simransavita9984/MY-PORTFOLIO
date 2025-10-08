@@ -95,7 +95,7 @@ const Skills = () => {
             {[...skillCategories, ...skillCategories].map((category, idx) => (
               <div
                 key={idx}
-                className="card-glass p-6 sm:p-8 flex flex-col min-w-[280px] hover:scale-105 transition-transform duration-300"
+                className="card-glass p-6 sm:p-8 flex flex-col min-w-[280px] border-2 border-blue-500 shadow-md"
               >
                 <h3 className="text-2xl font-semibold text-center mb-6 text-glow">
                   {category.category}
