@@ -34,7 +34,7 @@ const projects = [
     ],
     image:
       "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop",
-    demoUrl: "https://letsplaytoe.netlify.app/",
+    demoUrl: "https://tic-tac-toe-game-beta-three-17.vercel.app/",
     githubUrl: "https://github.com/simransavita9984/Tic-Tac-Toe-Game",
   },
   {
